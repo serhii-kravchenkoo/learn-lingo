@@ -39,7 +39,7 @@ export default function Modal({ onClose, children }: ModalProps) {
       <div className={css.modal}>
         <button className={css.closeBtn} onClick={onClose}>
           <svg width={32} height={32}>
-            <use href="/symbol-defs.svg#x" />
+            <use href="/sprite.svg#x" />
           </svg>
         </button>
         {children}

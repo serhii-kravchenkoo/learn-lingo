@@ -60,6 +60,13 @@ h1 {
   line-height: 1.2;
 }
 
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 p {
   margin: 0;
   color: var(--color-text-secondary);

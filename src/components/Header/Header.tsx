@@ -41,8 +41,8 @@ export default function Header() {
                 className={css.login}
                 onClick={() => setIsLoginOpen(!isLoginOpen)}
               >
-                <svg width={20} height={20}>
-                  <use href="/symbol-defs.svg#log-in-01" />
+                <svg width={20} height={20} className={css.icon}>
+                  <use href="/sprite.svg#log-in-01" />
                 </svg>
                 <p>Log in</p>
               </button>
