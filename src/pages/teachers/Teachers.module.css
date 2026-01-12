@@ -1,0 +1,75 @@
+.teachers {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+.teachersContainer {
+    padding: 96px 128px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.filtersBox {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.languagesBox,
+.levelBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.languagesBox>label,
+.levelBox>label,
+.priceBox>label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #8a8a89;
+}
+
+.languagesBox>select,
+.levelBox>select,
+.priceBox>select {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #121417;
+    outline: none;
+    border-radius: 14px;
+    padding: 14px 18px;
+    width: 221px;
+    height: 48px;
+    display: flex;
+    border: none;
+    background-color: #fff;
+    background-image: url('/ctrl.svg');
+    background-repeat: no-repeat;
+    background-position: right 14px top 10px;
+    appearance: none;
+    background-size: 20px;
+}
+
+.levelBox>select {
+    width: 255px;
+}
+
+.priceBox>select {
+    width: 124px;
+}
+
+
+.teachersList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+}

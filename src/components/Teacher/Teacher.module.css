@@ -1,0 +1,186 @@
+.teacherContainer {
+    display: flex;
+    gap: 48px;
+    padding: 24px;
+    width: 1184px;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.container {
+    width: 968px;
+}
+
+.container>h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    color: #121417;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.box>p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #8a8a89;
+}
+
+.wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-right: 64px;
+    margin-left: auto;
+}
+
+.wrapper p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #121417;
+}
+
+.avatarBox {
+    border: 3px solid #fbe9ba;
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.avatar {
+    border-radius: 100px;
+    width: 96px;
+    height: 96px;
+}
+
+.avatarBox>svg {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+.heart {
+    fill: transparent;
+    stroke: black;
+}
+
+.teacherInfoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+.teacherInfoBox>p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #8a8a89;
+}
+
+.teacherInfoBox p>span {
+    color: #121417;
+}
+
+.readMoreBtn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: underline;
+    color: #121417;
+}
+
+.experience {
+    margin-bottom: 32px;
+}
+
+.reviewsList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.reviewerAvatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    border: 1px solid;
+}
+
+.review>div {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.reviewRating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.revierName {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #8a8a89;
+}
+
+.reviewRating>span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #121417;
+}
+
+.review>p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #121417;
+}
+
+.levelsList {
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+.levelsList>li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(18, 20, 23, 0.2);
+    border-radius: 35px;
+    padding: 8px 12px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #121417;
+}
+
+.activeLevel {
+    background-color: #f4c550;
+}
+
+.btnBox {
+    width: 242px;
+    height: 60px;
+    margin-top: 32px;
+}
+
+.favorite {
+    fill: #f4c550;
+}

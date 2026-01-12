@@ -23,4 +23,7 @@
     right: 20px;
     top: 20px;
     stroke: #121417;
+    border: none;
+    padding: 0;
+    background: none;
 }
