@@ -34,27 +34,27 @@ export default function AuthForm({ onClose }: Props) {
   const onSubmit = async (data: AuthFormValues) => {
     try {
       await registerUser(data.email, data.password);
-      alert("Користувач зареєстрований");
+      alert("Користувача зареєстровано");
       onClose();
       console.log(data);
     } catch (error) {
       if (error instanceof FirebaseError) {
         switch (error.code) {
           case "auth/user-not-found":
-            alert("Користувача з такою поштою не існує");
+            alert("Користувача з такою поштою не зареєстровано");
             break;
           case "auth/wrong-password":
-            alert("Неправильний пароль");
+            alert("Невірний пароль");
             break;
           case "auth/invalid-credential":
           case "auth/invalid-email":
-            alert("Неправильна пошта або пароль");
+            alert("Невірна пошта або пароль");
             break;
           default:
             alert(error.message);
         }
       } else {
-        alert("Невідома помилка");
+        alert("Помилка");
       }
     }
   };
@@ -81,7 +81,6 @@ export default function AuthForm({ onClose }: Props) {
         />
         {errors.password && <span>{errors.password.message}</span>}
 
-        {/* 🔽 Кнопка inline */}
         <button type="submit" className={css.btn}>
           Sign Up
         </button>

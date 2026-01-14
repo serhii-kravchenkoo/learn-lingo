@@ -47,7 +47,7 @@
 }
 
 .avatarBox {
-    border: 3px solid #fbe9ba;
+    border: 3px solid #CBDED3;
     border-radius: 100px;
     width: 120px;
     height: 120px;
@@ -72,6 +72,7 @@
 .heart {
     fill: transparent;
     stroke: black;
+    background: none;
 }
 
 .teacherInfoBox {
@@ -98,7 +99,10 @@
     font-size: 16px;
     line-height: 1.5;
     text-decoration: underline;
+    text-decoration-skip-ink: none;
     color: #121417;
+    padding: 0px;
+    background: none;
 }
 
 .experience {
@@ -172,7 +176,7 @@
 }
 
 .activeLevel {
-    background-color: #f4c550;
+    background-color: #9fbaae;
 }
 
 .btnBox {
@@ -182,5 +186,26 @@
 }
 
 .favorite {
-    fill: #f4c550;
+    fill: #9fbaae;
+
+}
+
+.trialBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    padding: 16px 48px;
+    height: 60px;
+    background-color: #9fbaae;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #121417;
+}
+
+.heartBtn {
+    padding: 0px;
+    background: none;
 }

@@ -60,7 +60,7 @@ export default function TeacherComponent({
               </span>
             </p>
           </div>
-          <button onClick={onToggleFavorite}>
+          <button onClick={onToggleFavorite} className={css.heartBtn}>
             <svg
               width={26}
               height={26}
@@ -102,21 +102,24 @@ export default function TeacherComponent({
             <p className={css.experience}>{teacher.experience}</p>
             <ul className={css.reviewsList}>
               {teacher.reviews.map(
-                ({ comment, reviewer_name, reviewer_rating }, index) => (
+  (
+    { comment, reviewer_name, reviewer_rating, reviewer_avatar },
+    index
+  ) => (
                   <li className={css.review} key={index}>
                     <div>
                       <div className={css.reviewerAvatar}>
                         <img
-                          src="/ava.jpg"
-                          alt="user avatar"
-                          style={{
-                            display: "block",
-                            width: "44px",
-                            height: "44px",
-                            borderRadius: "100px",
-                            border: "none",
-                          }}
-                        />
+  src={reviewer_avatar}
+  alt={`${reviewer_name} avatar`}
+  style={{
+    display: "block",
+    width: "44px",
+    height: "44px",
+    borderRadius: "100px",
+    border: "none",
+  }}
+/>
                       </div>
                       <div>
                         <p className={css.revierName}>{reviewer_name}</p>
@@ -147,12 +150,7 @@ export default function TeacherComponent({
         </ul>
         {loadMore && (
   <div className={css.btnBox}>
-    <button
-      type="button"
-      onClick={() => {
-        setIsBookOpen(true);
-      }}
-    >
+    <button type="button" onClick={() => { setIsBookOpen(true) }} className={css.trialBtn}>
       Book trial lesson
     </button>
   </div>

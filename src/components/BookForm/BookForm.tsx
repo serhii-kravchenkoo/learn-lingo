@@ -34,50 +34,50 @@ export default function BookForm({ teacher }: Props) {
           <label>
             <input type="radio" name="reason" value="career" defaultChecked />
             <svg width={24} height={24} className={css.radio}>
-              <use href="/symbol-defs.svg#RadioButton" />
+              <use href="/sprite.svg#RadioButton" />
             </svg>
             <svg width={24} height={24} className={css.ring}>
-              <use href="/symbol-defs.svg#ring" />
+              <use href="/sprite.svg#ring" />
             </svg>
             Career and business
           </label>
           <label>
             <input type="radio" name="reason" value="kids" />
             <svg width={24} height={24} className={css.radio}>
-              <use href="/symbol-defs.svg#RadioButton" />
+              <use href="/sprite.svg#RadioButton" />
             </svg>
             <svg width={24} height={24} className={css.ring}>
-              <use href="/symbol-defs.svg#ring" />
+              <use href="/sprite.svg#ring" />
             </svg>
             Lesson for kids
           </label>
           <label>
             <input type="radio" name="reason" value="abroad" />
             <svg width={24} height={24} className={css.radio}>
-              <use href="/symbol-defs.svg#RadioButton" />
+              <use href="/sprite.svg#RadioButton" />
             </svg>
             <svg width={24} height={24} className={css.ring}>
-              <use href="/symbol-defs.svg#ring" />
+              <use href="/sprite.svg#ring" />
             </svg>
             Living abroad
           </label>
           <label>
             <input type="radio" name="reason" value="exams" />
             <svg width={24} height={24} className={css.radio}>
-              <use href="/symbol-defs.svg#RadioButton" />
+              <use href="/sprite.svg#RadioButton" />
             </svg>
             <svg width={24} height={24} className={css.ring}>
-              <use href="/symbol-defs.svg#ring" />
+              <use href="/sprite.svg#ring" />
             </svg>
             Exams and coursework
           </label>
           <label>
             <input type="radio" name="reason" value="travel" />
             <svg width={24} height={24} className={css.radio}>
-              <use href="/symbol-defs.svg#RadioButton" />
+              <use href="/sprite.svg#RadioButton" />
             </svg>
             <svg width={24} height={24} className={css.ring}>
-              <use href="/symbol-defs.svg#ring" />
+              <use href="/sprite.svg#ring" />
             </svg>
             Culture, travel or hobby
           </label>
@@ -85,7 +85,7 @@ export default function BookForm({ teacher }: Props) {
         <input type="text" placeholder="Full Name" required />
         <input type="email" placeholder="Email" required />
         <input type="tel" placeholder="Phone number" required />
-        <button type="submit">Book</button>
+        <button type="submit" className={css.bookBtn}>Book</button>
       </form>
     </div>
   );

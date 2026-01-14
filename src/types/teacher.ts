@@ -2,6 +2,7 @@ export interface Review {
   reviewer_name: string
   reviewer_rating: number
   comment: string
+  reviewer_avatar: string
 }
 
 export interface Teacher {
