@@ -38,3 +38,12 @@ export async function fetchTeachers(
     ...value,
   }));
 }
+export const getAllTeachers = async (): Promise<Teacher[]> => {
+  const snapshot = await get(ref(db, `teachers`));
+  if (!snapshot.exists()) return [];
+  const data = snapshot.val() as Record<string, TeacherFromDB>;
+  return Object.entries(data).map(([id, value]) => ({
+    id,
+    ...value,
+  }));
+};

@@ -28,6 +28,7 @@ export default function Header() {
           <div className={css.navBox}>
             <Link to="/">Home</Link>
             <Link to="/teachers">Teachers</Link>
+            {isAuthenticated && <Link to="/favourites">Favourites</Link>}
           </div>
         </nav>
         <div className={css.auth}>
