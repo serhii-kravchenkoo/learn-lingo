@@ -35,6 +35,33 @@ Learn-Lingo is a web application for language learning that allows users to brow
 - **Backend / Auth:** Firebase Authentication
 - **Database:** Firebase Realtime Database
 - **Build Tool:** Vite
+---
+
+## 🔐 Authentication & Database
+
+- User registration, login, and logout via Firebase Authentication
+- Protected (private) routes доступні лише авторизованим користувачам
+- Teachers data is stored in Firebase Realtime Database
+- User favorites are stored per authenticated user
+- Favorites persist after page reload
+
+---
+
+## 🎨 Design
+
+- The user interface is implemented according to the provided Figma design
+- Fully matches layout, spacing, and visual requirements
+
+🔗 https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc
+
+---
+
+## 📋 Technical Requirements
+
+- The project fully follows the provided technical specification
+- All functional and technical requirements are implemented
+
+🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
 
 ---
 
@@ -69,30 +96,4 @@ src/
 ├── main.tsx
 └── index.css
 
----
 
-## 🔐 Authentication & Database
-
-- User registration, login, and logout via Firebase Authentication
-- Protected (private) routes доступні лише авторизованим користувачам
-- Teachers data is stored in Firebase Realtime Database
-- User favorites are stored per authenticated user
-- Favorites persist after page reload
-
----
-
-## 🎨 Design
-
-- The user interface is implemented according to the provided Figma design
-- Fully matches layout, spacing, and visual requirements
-
-🔗 https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc
-
----
-
-## 📋 Technical Requirements
-
-- The project fully follows the provided technical specification
-- All functional and technical requirements are implemented
-
-🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
