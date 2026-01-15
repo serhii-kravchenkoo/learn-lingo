@@ -71,24 +71,30 @@ src/
 
 ---
 
-## 🔐 **Authentication & Database**
-Firebase Authentication:
-- User registration
-- Login / logout
-- Protected (private) routes
-- Firebase Realtime Database:
-- Teachers data storage
-- User-specific favorites
-- Favorites persist after page reload and are stored per authenticated user
+## 🔐 Authentication & Database
+
+- **Firebase Authentication**
+  - User registration
+  - Login / logout
+  - Protected (private) routes
+
+- **Firebase Realtime Database**
+  - Teachers data storage
+  - User-specific favorites
+  - Favorites persist after page reload and are stored per authenticated user
 
 ---
 
-## 🎨 **Design**
-The user interface is implemented according to the Figma design:
-##🔗 https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc
+## 🎨 Design
+
+The user interface is implemented according to the provided Figma design:
+
+🔗 https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc
 
 ---
 
-## 📋 **Technical Requirements**
+## 📋 Technical Requirements
+
 The project fully follows the provided technical specification:
-## 🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
+
+🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
