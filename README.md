@@ -71,8 +71,7 @@ src/
 
 ---
 
-
-##🔐 **Authentication & Database**
+## 🔐 **Authentication & Database**
 Firebase Authentication:
 - User registration
 - Login / logout
@@ -84,13 +83,12 @@ Firebase Authentication:
 
 ---
 
-##🎨 **Design**
+## 🎨 **Design**
 The user interface is implemented according to the Figma design:
 ##🔗 https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc
 
 ---
 
-
-##📋 **Technical Requirements**
+## 📋 **Technical Requirements**
 The project fully follows the provided technical specification:
-##🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
+## 🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
