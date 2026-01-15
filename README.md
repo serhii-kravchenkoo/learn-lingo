@@ -73,21 +73,18 @@ src/
 
 ## 🔐 Authentication & Database
 
-- **Firebase Authentication**
-  - User registration
-  - Login / logout
-  - Protected (private) routes
-
-- **Firebase Realtime Database**
-  - Teachers data storage
-  - User-specific favorites
-  - Favorites persist after page reload and are stored per authenticated user
+- User registration, login, and logout via Firebase Authentication
+- Protected (private) routes доступні лише авторизованим користувачам
+- Teachers data is stored in Firebase Realtime Database
+- User favorites are stored per authenticated user
+- Favorites persist after page reload
 
 ---
 
 ## 🎨 Design
 
-The user interface is implemented according to the provided Figma design:
+- The user interface is implemented according to the provided Figma design
+- Fully matches layout, spacing, and visual requirements
 
 🔗 https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc
 
@@ -95,6 +92,7 @@ The user interface is implemented according to the provided Figma design:
 
 ## 📋 Technical Requirements
 
-The project fully follows the provided technical specification:
+- The project fully follows the provided technical specification
+- All functional and technical requirements are implemented
 
 🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
