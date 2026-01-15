@@ -68,7 +68,6 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
-```txt
 
 ---
 
