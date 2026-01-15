@@ -1,73 +1,95 @@
-# React + TypeScript + Vite
+# 📚 Learn-Lingo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Learn-Lingo is a web application for language learning that allows users to browse language teachers, authenticate, add teachers to favorites, and book trial lessons.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://learn-lingo-nu-navy.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- 🔐 User authentication (sign up / log in / log out)
+- 👩‍🏫 Browse a list of language teachers
+- 🔍 Filter teachers by:
+  - Teaching language
+  - Student level
+  - Price per hour
+- ⭐ Add and remove teachers from favorites
+- ❤️ Private Favorites page (available only for authenticated users)
+- 📄 Expandable teacher cards (“Read more”)
+- 📑 Pagination (Load more — 4 cards per request)
+- 📅 Trial lesson booking
+- 🧠 Authentication state management with Context API
+- 🔥 Firebase integration
+- ⚡ Single Page Application (SPA) built with React + TypeScript
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend:** React, TypeScript
+- **Routing:** React Router
+- **State Management:** Context API
+- **Forms & Validation:** react-hook-form, yup
+- **Styling:** CSS / CSS Modules
+- **Backend / Auth:** Firebase Authentication
+- **Database:** Firebase Realtime Database
+- **Build Tool:** Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Project Structure
+src/
+├── assets/            # Static assets
+├── auth/              # Authentication logic
+│   ├── auth.types.ts
+│   ├── AuthContext.tsx
+│   └── useAuth.ts
+├── components/        # Reusable components
+│   ├── AuthForm/
+│   ├── LoginForm/
+│   ├── BookForm/
+│   ├── Modal/
+│   ├── Loader/
+│   ├── Header/
+│   └── Teacher/
+├── firebase/          # Firebase configuration
+├── layouts/           # Layout components
+├── pages/             # Application pages
+│   ├── home/
+│   ├── teachers/
+│   └── favourites/
+├── services/          # API / Firebase services
+│   ├── auth.ts
+│   ├── teachers.ts
+│   └── favoriteTeachers.ts
+├── types/             # Shared TypeScript types
+├── App.tsx
+├── main.tsx
+└── index.css
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+##🔐 **Authentication & Database**
+Firebase Authentication:
+- User registration
+- Login / logout
+- Protected (private) routes
+- Firebase Realtime Database:
+- Teachers data storage
+- User-specific favorites
+- Favorites persist after page reload and are stored per authenticated user
+
+---
+
+##🎨 **Design**
+The user interface is implemented according to the Figma design:
+##🔗 https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc
+
+---
+
+
+##📋 **Technical Requirements**
+The project fully follows the provided technical specification:
+##🔗 https://docs.google.com/document/d/1ZB_MFgnnJj7t7OXtv5hESSwY6xRgVoACZKzgZczWc3Y
