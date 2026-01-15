@@ -134,3 +134,7 @@
     line-height: 1.6;
     color: #121417;
 }
+
+.bookBtn:hover {
+    background-color: #CBDED3;
+}

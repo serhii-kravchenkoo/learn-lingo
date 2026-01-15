@@ -209,3 +209,7 @@
     padding: 0px;
     background: none;
 }
+
+.trialBtn:hover {
+    background-color: #CBDED3;
+}

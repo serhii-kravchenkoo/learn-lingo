@@ -109,17 +109,7 @@ export default function TeacherComponent({
                   <li className={css.review} key={index}>
                     <div>
                       <div className={css.reviewerAvatar}>
-                        <img
-  src={reviewer_avatar}
-  alt={`${reviewer_name} avatar`}
-  style={{
-    display: "block",
-    width: "44px",
-    height: "44px",
-    borderRadius: "100px",
-    border: "none",
-  }}
-/>
+                        <img src={reviewer_avatar} alt={`${reviewer_name} avatar`} style={{ display: "block", width: "44px", height: "44px", borderRadius: "100px", border: "none" }} />
                       </div>
                       <div>
                         <p className={css.revierName}>{reviewer_name}</p>

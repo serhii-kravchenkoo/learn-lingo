@@ -10,7 +10,6 @@ import Loader from "../Loader/Loader";
 export default function Header() {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
-
   const { isAuthenticated, logout, loading } = useAuth();
 
   if (loading) return <Loader />;

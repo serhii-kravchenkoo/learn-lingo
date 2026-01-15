@@ -41,7 +41,7 @@ export default function Teachers() {
   const toggleFavorite = async (teacherId: string) => {
     const user = auth.currentUser;
     if (!user) {
-      alert("Для додавання вчителя в обрані необхідно зареєструватися!");
+      alert("To add a teacher to your favorites, you must register!");
       return;
     }
     const isFav = favoriteIds.has(teacherId);

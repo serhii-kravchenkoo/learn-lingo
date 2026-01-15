@@ -52,3 +52,7 @@
     line-height: 1.6;
     color: #171215;
 }
+
+.btn:hover {
+    background-color: #CBDED3;
+}
