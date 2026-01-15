@@ -39,13 +39,14 @@ Learn-Lingo is a web application for language learning that allows users to brow
 ---
 
 ## 📂 Project Structure
+```txt
 src/
-├── assets/            # Static assets
-├── auth/              # Authentication logic
+├── assets/                 # Static assets
+├── auth/                   # Authentication logic
 │   ├── auth.types.ts
 │   ├── AuthContext.tsx
 │   └── useAuth.ts
-├── components/        # Reusable components
+├── components/             # Reusable components
 │   ├── AuthForm/
 │   ├── LoginForm/
 │   ├── BookForm/
@@ -53,17 +54,17 @@ src/
 │   ├── Loader/
 │   ├── Header/
 │   └── Teacher/
-├── firebase/          # Firebase configuration
-├── layouts/           # Layout components
-├── pages/             # Application pages
+├── firebase/               # Firebase configuration
+├── layouts/                # Layout components
+├── pages/                  # Application pages
 │   ├── home/
 │   ├── teachers/
 │   └── favourites/
-├── services/          # API / Firebase services
+├── services/               # API / Firebase services
 │   ├── auth.ts
 │   ├── teachers.ts
 │   └── favoriteTeachers.ts
-├── types/             # Shared TypeScript types
+├── types/                  # Shared TypeScript types
 ├── App.tsx
 ├── main.tsx
 └── index.css
