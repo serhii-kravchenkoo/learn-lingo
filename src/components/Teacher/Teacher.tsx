@@ -149,7 +149,7 @@ export default function TeacherComponent({
       {isBookOpen && (
         <Modal
           onClose={() => setIsBookOpen(false)}
-          children={<BookForm teacher={teacher} />}
+          children={<BookForm teacher={teacher} onClose={() => setIsBookOpen(false)}/>}
         />
       )}
     </div>

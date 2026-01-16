@@ -51,7 +51,6 @@
     display: flex;
     border: none;
     background-color: #fff;
-    background-image: url('/ctrl.svg');
     background-repeat: no-repeat;
     background-position: right 14px top 10px;
     appearance: none;
