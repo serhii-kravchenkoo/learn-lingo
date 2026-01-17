@@ -9,8 +9,8 @@ import {
 import { db } from "../firebase/firebaseConfig";
 import type { Teacher } from "../types/teacher";
 
-
 const PAGE_SIZE = 4;
+
 type TeacherFromDB = Omit<Teacher, "id">;
 
 export async function fetchTeachers(

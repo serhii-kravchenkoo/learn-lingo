@@ -1,7 +1,6 @@
 import css from "./Teachers.module.css";
 import { useCallback, useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-
 import TeacherComponent from "../../components/Teacher/Teacher";
 import type { Teacher } from "../../types/teacher";
 import { fetchTeachers } from "../../services/teachers";
