@@ -14,18 +14,18 @@ Learn-Lingo is a web application for language learning that allows users to brow
   - Teaching language
   - Student level
   - Price per hour
-- ⭐ Add and remove teachers from favorites
+- ⭐️ Add and remove teachers from favorites
 - ❤️ Private Favorites page (available only for authenticated users)
 - 📄 Expandable teacher cards (“Read more”)
 - 📑 Pagination (Load more — 4 cards per request)
 - 📅 Trial lesson booking
 - 🧠 Authentication state management with Context API
 - 🔥 Firebase integration
-- ⚡ Single Page Application (SPA) built with React + TypeScript
+- ⚡️ Application built with React + TypeScript
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 - **Frontend:** React, TypeScript
 - **Routing:** React Router
