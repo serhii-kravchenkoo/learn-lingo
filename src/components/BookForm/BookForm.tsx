@@ -4,6 +4,9 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 const bookFormSchema = yup.object({
   reason: yup.string().required("Choose a reason"),
   name: yup.string().required("Full name is required"),
@@ -33,7 +36,11 @@ export default function BookForm({ teacher, onClose }: Props) {
 
   const onSubmit = (data: BookFormValues) => {
     console.log(data);
-    alert("Your request is being processed.");
+    iziToast.success({
+    title: "Success",
+    message: "Your request is being processed.",
+    position: "topRight",
+  });
     onClose();
   };
 

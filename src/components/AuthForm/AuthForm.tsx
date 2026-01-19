@@ -6,6 +6,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { FirebaseError } from "firebase/app";
 import { registerUser } from "../../services/auth";
 
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 interface AuthFormValues {
   name: string;
   email: string;
@@ -34,27 +37,51 @@ export default function AuthForm({ onClose }: Props) {
   const onSubmit = async (data: AuthFormValues) => {
     try {
       await registerUser(data.email, data.password);
-      alert("Користувача зареєстровано");
+      iziToast.success({
+      title: "Success",
+      message: "Користувача зареєстровано",
+      position: "topRight",
+    });
       onClose();
       console.log(data);
     } catch (error) {
       if (error instanceof FirebaseError) {
         switch (error.code) {
           case "auth/user-not-found":
-            alert("Користувача з такою поштою не зареєстровано");
+            iziToast.error({
+            title: "Error",
+            message: "Користувача з такою поштою не зареєстровано",
+            position: "topRight",
+          });
             break;
           case "auth/wrong-password":
-            alert("Невірний пароль");
+            iziToast.error({
+            title: "Error",
+            message: "Невірний пароль",
+            position: "topRight",
+          });
             break;
           case "auth/invalid-credential":
           case "auth/invalid-email":
-            alert("Невірна пошта або пароль");
+            iziToast.error({
+            title: "Error",
+            message: "Невірна пошта або пароль",
+            position: "topRight",
+          });
             break;
           default:
-            alert(error.message);
+            iziToast.error({
+            title: "Error",
+            message: error.message,
+            position: "topRight",
+          });
         }
       } else {
-        alert("Помилка");
+        iziToast.error({
+        title: "Error",
+        message: "Сталася помилка",
+        position: "topRight",
+      });
       }
     }
   };

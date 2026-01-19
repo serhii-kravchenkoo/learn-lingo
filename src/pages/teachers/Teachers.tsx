@@ -8,6 +8,9 @@ import Loader from "../../components/Loader/Loader";
 import { auth } from "../../firebase/firebaseConfig";
 import { addToFavorites, getFavorites, removeFromFavorites } from "../../services/favoriteTeachers";
 
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 type Filters = { language: string; level: string; price: string };
 const PAGE_SIZE = 4;
 
@@ -40,7 +43,11 @@ export default function Teachers() {
   const toggleFavorite = async (teacherId: string) => {
     const user = auth.currentUser;
     if (!user) {
-      alert("To add a teacher to your favorites, you must register!");
+      iziToast.info({
+        title: "Info",
+        message: "Щоб додати вчителя до обраного, вам необхідно зареєструватися!",
+        position: "topRight",
+          });
       return;
     }
     const isFav = favoriteIds.has(teacherId);

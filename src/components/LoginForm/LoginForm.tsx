@@ -6,6 +6,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { FirebaseError } from "firebase/app";
 import { loginUser } from "../../services/auth";
 
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 interface LoginFormValues {
   email: string;
   password: string;
@@ -32,25 +35,49 @@ export default function LoginForm({ onClose }: Props) {
   const onSubmit = async (data: LoginFormValues) => {
     try {
       await loginUser(data.email, data.password);
-      alert("Користувач успішно залогінився");
+      iziToast.success({
+        title: "Success",
+        message: "Користувач успішно залогінився",
+        position: "topRight",
+          });
       onClose();
     } catch (error) {
       if (error instanceof FirebaseError) {
         switch (error.code) {
           case "auth/user-not-found":
-            alert("Користувача з такою поштою не існує");
+            iziToast.error({
+              title: "Error",
+              message: "Користувача з такою поштою не існує",
+              position: "topRight",
+                });
             break;
           case "auth/wrong-password":
-            alert("Неправильний пароль");
+            iziToast.error({
+              title: "Error",
+              message: "Неправильний пароль",
+              position: "topRight",
+                });
             break;
           case "auth/invalid-credential":
-            alert("Неправильна пошта або пароль");
+            iziToast.error({
+              title: "Error",
+              message: "Неправильна пошта або пароль",
+              position: "topRight",
+                });
             break;
           default:
-            alert(error.message);
+            iziToast.error({
+              title: "Error",
+              message: error.message,
+              position: "topRight",
+                });
         }
       } else {
-        alert("Невідома помилка");
+        iziToast.error({
+          title: "Error",
+          message: "Невідома помилка",
+          position: "topRight",
+            });
       }
     }
   };

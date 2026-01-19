@@ -11,11 +11,10 @@ function App() {
 
       <Route element={<MainLayout/>}>
         <Route path="/" element={<Home />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/favourites" element={<FavouriteTeachers />} />
       </Route>
 
-
-      <Route path="/teachers" element={<Teachers />} />
-      <Route path="/favourites" element={<FavouriteTeachers />} />
     </Routes>
   );
 }
